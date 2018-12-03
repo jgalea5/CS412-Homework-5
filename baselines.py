@@ -7,7 +7,7 @@ class most_frequent(BinaryClassifier):
 		self.most_frequent_class = 1
 
 	def predict(self, X):
-		
+		return self.mostFrequentClass
 
 	def train(self,X,Y):
 		label = {0:"not very empathetic", 1:"not very empathetic", 2:"not very empathetic", 3:"not very empathetic", 4:"very empathetic", 5:"very empathetic"}

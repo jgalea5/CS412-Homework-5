@@ -1,3 +1,6 @@
+import numpy as np
+from sklearn.model_selection import train_test_split
+
 def convert_categorical_to_numbers(filepath):
 	conversion = {'\n':0,'':0, '"doctorate degree"':6, '"never smoked"':1, '"tried smoking"':2, '"former smoker"':3, '"current smoker"':4,'"social drinker"':2, '"drink a lot"':3,'"i am often early"':1, '"i am always on time"':2, '"i am often running late"':3,'"never"':1, '"only to avoid hurting someone"':2, '"sometimes"':3, '"everytime it suits me"':4,'"no time at all"':1, '"less than an hour a day"':2, '"few hours a day"':3, '"most of the day"':4,'"female"':1, '"male"':2,'"left handed"':1, '"right handed"':2,'"currently a primary school pupil"':1, '"primary school"':2, '"secondary school"':3, '"college/bachelor degree"':4, '"masters degree"':5, '"no"':1, '"yes"':2,'"city"':1, '"village"':2, '"house/bungalow"\n':1, '"block of flats"\n':2}
 	h = [73, 74, 107, 108, 132, 144, 145, 146, 147, 148, 149]
@@ -62,6 +65,10 @@ def feature_label_split(file):
 	Y = data[:,99]
 	X = np.delete(data, np.s_[99:100], axis=1)
 	return X,Y
+
+def process_data():
+	convert_categorical_to_numbers("young-people-survey/responses.csv")
+	split_files("formatted_responses.csv")
 
 
 # smoke_conversion = {'"never smoked"':1, '"tried smoking"':2, '"former smoker"':3, '"current smoker"':4}
