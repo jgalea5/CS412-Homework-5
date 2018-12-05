@@ -28,7 +28,7 @@ def convert_categorical_to_numbers(filepath):
 	            if j in h:
 	                i[j] = conversion[i[j]]
 	            elif i[j] == '':
-	                i[j] =  rn.randint(1,6)
+	                i[j] =  rn.randint(1, 5)
 	            f1.write(str(i[j]))
 	            if not (len(i)-1 == j):
 	                f1.write(",")
