@@ -13,7 +13,7 @@ empathetic he or she is. Using the Young People Survey dataset
 the other attributes in the dataset to make this prediction; however, you should not handpick the
 predictive features but let an algorithm select them.
 
-The link to the original dataset is provided in the link below. We used the young people survey for homework 5:
+The link to the original dataset is provided in the link below. We used the young people survey dataset for homework 5:
 
 https://www.kaggle.com/miroslavsabo/young-people-survey/
 
