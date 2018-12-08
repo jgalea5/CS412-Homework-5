@@ -13,5 +13,5 @@ If you want to run the preprocessing, then use python3 preprocessing.py
 
 If you want to run the training, then use python3 training.py
 
-If you want to run the testing, then use pythong3 testing.py
+If you want to run the testing, then use python3 testing.py
 
