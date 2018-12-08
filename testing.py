@@ -10,6 +10,7 @@ def main():
 	pickle_file = open('rand_forest_classifier.pkl', 'rb')
 	classifier = pickle.load(pickle_file)
 	s1 = classifier.predict(Xte)
+	pickle_file.close()
 	print('predicting test sample data...')
 
 	print("the accuracy on the testing data is :{0}".format(mean(s1==Yte)))
